@@ -3,24 +3,7 @@ import React, { useEffect } from "react";
 import anime from "animejs";
 
 export const Flower = () => {
-  function animation() {
-    anime({
-      targets: "svg path",
-      strokeDashoffset: [anime.setDashoffset, 0],
-      easing: "cubicBezier(.5, .05, .1, .3)",
-      duration: 500,
-      delay: function(el, i) {
-        return i * 250;
-      },
-      loop: true,
-      direction: "alternate",
-      autoplay: true
-    });
-  }
 
-  useEffect(() => {
-    animation();
-  });
 
   return (
     <div>
